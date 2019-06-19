@@ -1053,7 +1053,7 @@ describe Proposal do
       let(:proposal) { create(:proposal, :with_milestone_tags) }
 
       it "has milestone_tags" do
-        expect(proposal.milestone_tag_list.count).to eq(1)
+        expect(proposal.reload.milestone_tag_list.count).to eq(1)
       end
     end
   end
