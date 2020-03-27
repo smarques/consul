@@ -449,15 +449,30 @@ a {
   margin-top: 0;
 }
 
+.admin {
+
+  .side-menu-and-content {
+    min-height: calc(100vh - 110px);
+  }
+}
+
+.dashboard {
+
+  .side-menu-and-content {
+    min-height: calc(100vh - 181px);
+  }
+}
+
 .side-menu-and-content {
   display: flex;
+  overflow-y: auto;
 
   > :first-child {
     flex: 25%;
     min-width: 250px;
 
     > :first-child {
-      height: 100%;
+      min-height: 100%;
     }
   }
 
