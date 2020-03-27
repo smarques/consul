@@ -468,8 +468,8 @@ a {
   overflow-y: auto;
 
   > :first-child {
-    flex: 25%;
-    min-width: 250px;
+    flex: 20%;
+    min-width: rem-calc(240);
 
     > :first-child {
       min-height: 100%;
@@ -477,9 +477,9 @@ a {
   }
 
   > :last-child {
-    flex: 75%;
+    flex: 80%;
     overflow-x: auto;
-    padding: $line-height !important;
+    padding: $line-height;
   }
 }
 
