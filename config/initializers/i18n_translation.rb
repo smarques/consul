@@ -12,7 +12,15 @@ module ActionView
         i18_content = I18nContent.find_by(key: key)
         translation = I18nContentTranslation.find_by(i18n_content_id: i18_content&.id,
                                                      locale: current_locale)&.value
-        translation.presence || translate(key, options)
+        if translation.present?
+          if options.present?
+            translation % options
+          else
+            translation
+          end
+        else
+          translate(key, options)
+        end
       end
     end
   end
