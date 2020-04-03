@@ -17,6 +17,7 @@ gem "delayed_job_active_record", "~> 4.1.3"
 gem "devise", "~> 4.7.1"
 gem "devise-async", "~> 1.0.0"
 gem "devise_security_extension", git: "https://github.com/phatworx/devise_security_extension.git" #, "~> 0.10"
+gem "dry-types", "~> 0.13.3"
 gem "font-awesome-sass", "~> 5.8.1"
 gem "foundation-rails", "~> 6.6.1.0"
 gem "foundation_rails_helper", "~> 3.0.0"
@@ -104,6 +105,10 @@ group :development do
   gem "rvm1-capistrano3", "~> 1.4.0", require: false
   gem "scss_lint", "~> 0.55.0", require: false
   gem "web-console", "~> 3.3.0"
+  gem "ed25519", "~> 1.2", require: false
+  gem "bcrypt_pbkdf", "~> 1.0", require: false
 end
 
 eval_gemfile "./Gemfile_custom"
+
+
