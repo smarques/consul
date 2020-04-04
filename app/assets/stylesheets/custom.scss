@@ -3,4 +3,20 @@
 // * English: https://github.com/consul/consul/blob/master/CUSTOMIZE_EN.md#css
 // * Spanish: https://github.com/consul/consul/blob/master/CUSTOMIZE_ES.md#css
 //
-body.vcv {}
+.orbit-image {
+    width: 80%;
+    max-width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.orbit-caption {
+    background: #eeeeee70;
+    color: $brand;
+}
+
+.dropdown.menu>li a {
+    background: none;
+    color: white;
+    font-weight: 600;
+}

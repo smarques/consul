@@ -865,6 +865,7 @@ it:
         no_questions: "Non ci sono quesiti assegnati a questa votazione."
         questions_title: "Elenco dei quesiti"
         table_title: "Titolo"
+        edit_answers: "Risposte"
       flash:
         question_added: "Domanda aggiunta a questo sondaggio"
         error_on_question_added: "La domanda non può essere assegnata a questo sondaggio"
