@@ -20,7 +20,7 @@ gem "devise_security_extension", git: "https://github.com/phatworx/devise_securi
 gem "dry-types", "~> 0.13.3"
 gem "font-awesome-sass", "~> 5.8.1"
 gem "foundation-rails", "~> 6.4.3.0"
-gem "foundation_rails_helper", "~> 2.0.0"
+gem "foundation_rails_helper", "~> 3.0.0"
 gem "globalize", "~> 5.2.0"
 gem "globalize-accessors", "~> 0.2.1"
 gem "graphiql-rails", "~> 1.4.1"
@@ -77,6 +77,8 @@ group :development, :test do
   gem "letter_opener_web", "~> 1.3.4"
   gem "spring", "~> 2.0.1"
   gem "spring-commands-rspec", "~> 1.0.4"
+  gem "better_errors"
+  gem "binding_of_caller"
 end
 
 group :test do
