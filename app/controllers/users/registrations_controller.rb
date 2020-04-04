@@ -5,9 +5,10 @@ class Users::RegistrationsController < Devise::RegistrationsController
   invisible_captcha only: [:create], honeypot: :address, scope: :user
 
   def new
-    super do |user|
-      user.use_redeemable_code = true if params[:use_redeemable_code].present?
-    end
+    redirect_to root_path, notice: t("messages.registrations_closed")
+    # super do |user|
+    #   user.use_redeemable_code = true if params[:use_redeemable_code].present?
+    # end
   end
 
   def create
