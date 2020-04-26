@@ -1,3 +1,6 @@
 it:
+  admin:
+    menu:
+      debates: Dibattiti
   messages:
     registrations_closed: Registrazioni chiuse, contatta gli amministratori.
