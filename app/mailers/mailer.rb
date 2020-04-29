@@ -127,6 +127,21 @@ class Mailer < ApplicationMailer
     mail(to: @email_to.email, subject: @email.subject) if @email.can_be_sent?
   end
 
+  # def user_imported_notice(user, subject, password)
+  #   @email_to = user.email
+  #   with_user(user) do
+  #     mail(to: @email_to, subject: subject)
+  #   end
+  # end
+
+  def user_imported_notice(user, mail_subject, pass)
+   @email_to = user.email
+   @generated_pass = pass
+   with_user(user) do
+    mail(to: @email_to, subject: mail_subject, generated_pass: @generated_pass)
+  end
+  end
+
   private
 
     def with_user(user)
